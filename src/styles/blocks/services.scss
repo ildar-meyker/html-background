@@ -1,0 +1,83 @@
+.services {
+    padding: 6rem 0 8rem 0;
+    border-radius: 3rem 3rem 0px 0px;
+    background: #fff;
+    color: #000;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 800;
+        line-height: calc(28 / 16);
+    }
+
+    &__desc {
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: calc(42 / 32);
+    }
+
+    &__list {
+        margin-left: 33.33%;
+        margin-top: 4rem;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -0.8rem;
+    }
+
+    &__col {
+        flex: 0 0 auto;
+        padding: 0 0.8rem;
+        width: 50%;
+    }
+
+    &__item {
+        display: block;
+        position: relative;
+        padding: 2rem 0 4rem 0;
+        border-top: 1px solid rgba(105, 119, 144, 0.5);
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: calc(24 / 20);
+
+        &:after {
+            content: " ";
+            transition: all 0.2s;
+            width: 4.4rem;
+            height: 4.4rem;
+            background: url(../img/icons/arrow-services.svg);
+            opacity: 0;
+            position: absolute;
+            right: 20%;
+            top: 2rem;
+        }
+
+        &:hover {
+            color: #ffcb25;
+
+            .services__index {
+                color: #ffcb25;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__name {
+        display: block;
+        padding-right: calc(20% + 4.4rem + 2rem);
+    }
+
+    &__index {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        font-weight: 500;
+        color: #b4bbc7;
+    }
+}

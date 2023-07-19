@@ -45,6 +45,23 @@
         }
     }
 
+    &--yellow-to-dark {
+        background: #ffcb25;
+
+        .btn-filled__icon {
+            background: #fff;
+        }
+
+        &:hover {
+            background: #000;
+            color: #ffcb25;
+
+            .btn-filled__icon {
+                background: #ffcb25;
+            }
+        }
+    }
+
     &--white {
         background: #fff;
 
