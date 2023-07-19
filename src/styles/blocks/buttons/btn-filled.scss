@@ -26,10 +26,11 @@
 
         .icon {
             font-size: 1rem;
+            stroke: #000;
         }
     }
 
-    &--yellow {
+    &--yellow-to-white {
         background: #ffcb25;
 
         .btn-filled__icon {
@@ -58,6 +59,31 @@
 
             .btn-filled__icon {
                 background: #ffcb25;
+            }
+        }
+    }
+
+    &--gray-to-yellow {
+        background: #444;
+
+        .btn-filled__icon {
+            background: #000;
+
+            .icon {
+                stroke: #444;
+            }
+        }
+
+        &:hover {
+            background: #ffcb25;
+            color: #000;
+
+            .btn-filled__icon {
+                background: #fff;
+
+                .icon {
+                    stroke: #000;
+                }
             }
         }
     }

@@ -412,17 +412,18 @@ a {
 }
 .btn-filled__icon .icon {
   font-size: 1rem;
+  stroke: #000;
 }
-.btn-filled--yellow {
+.btn-filled--yellow-to-white {
   background: #ffcb25;
 }
-.btn-filled--yellow .btn-filled__icon {
+.btn-filled--yellow-to-white .btn-filled__icon {
   background: #fff;
 }
-.btn-filled--yellow:hover {
+.btn-filled--yellow-to-white:hover {
   background: #fff;
 }
-.btn-filled--yellow:hover .btn-filled__icon {
+.btn-filled--yellow-to-white:hover .btn-filled__icon {
   background: #ffcb25;
 }
 .btn-filled--yellow-to-dark {
@@ -437,6 +438,25 @@ a {
 }
 .btn-filled--yellow-to-dark:hover .btn-filled__icon {
   background: #ffcb25;
+}
+.btn-filled--gray-to-yellow {
+  background: #444;
+}
+.btn-filled--gray-to-yellow .btn-filled__icon {
+  background: #000;
+}
+.btn-filled--gray-to-yellow .btn-filled__icon .icon {
+  stroke: #444;
+}
+.btn-filled--gray-to-yellow:hover {
+  background: #ffcb25;
+  color: #000;
+}
+.btn-filled--gray-to-yellow:hover .btn-filled__icon {
+  background: #fff;
+}
+.btn-filled--gray-to-yellow:hover .btn-filled__icon .icon {
+  stroke: #000;
 }
 .btn-filled--white {
   background: #fff;
@@ -474,6 +494,7 @@ a {
 }
 .btn-outline__icon .icon {
   font-size: 1rem;
+  stroke: #000;
 }
 .btn-outline:hover {
   border-color: #ffcb25;
@@ -511,10 +532,37 @@ a {
 }
 .btn-normal__icon .icon {
   font-size: 1rem;
+  stroke: #000;
 }
 .btn-normal:hover {
   background: #fff;
   color: #000;
+}
+
+.input-default input {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 2rem 0;
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+.input-default input:focus {
+  outline: none;
+  border-bottom-color: #ffcb25;
+}
+.input-default input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.input-default input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.input-default input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-tabs ul {
@@ -773,4 +821,54 @@ a {
   right: 0;
   font-weight: 500;
   color: #b4bbc7;
+}
+
+.contact {
+  padding-top: 4rem;
+  padding-bottom: 18rem;
+  color: #fff;
+  overflow: hidden;
+}
+.contact__title {
+  margin-bottom: 4rem;
+  white-space: nowrap;
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #ffcb25;
+}
+.contact__sep {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contact__desc {
+  margin-top: 3rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.contact__row {
+  display: flex;
+  margin: 0 -0.8rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  gap: 1.6rem 0;
+}
+.contact__col {
+  flex: 0 0 auto;
+  padding: 0 0.8rem;
+  width: 50%;
+}
+.contact__tip {
+  margin-top: 3rem;
+  width: 50%;
+  padding-right: 0.8rem;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.contact__tip a {
+  color: #ffcb25;
+}
+.contact__btn {
+  width: 50%;
+  padding-right: 0.8rem;
+  margin-top: 2rem;
 }

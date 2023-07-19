@@ -1,0 +1,23 @@
+.input-default {
+    input {
+        background: transparent;
+        border: 0;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid rgba(#fff, 0.5);
+        width: 100%;
+        padding: 2rem 0;
+        font-family: inherit;
+        font-size: 2rem;
+        line-height: calc(32 / 20);
+        color: #fff;
+
+        &:focus {
+            outline: none;
+            border-bottom-color: #ffcb25;
+        }
+
+        &::placeholder {
+            color: rgba(#fff, 0.5);
+        }
+    }
+}
