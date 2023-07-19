@@ -335,6 +335,9 @@ a {
   width: 100%;
   padding: 2rem 0;
 }
+.header__col-logo {
+  width: 13.1rem;
+}
 .header__center {
   display: flex;
   align-items: center;
