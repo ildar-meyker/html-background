@@ -1,0 +1,120 @@
+<!-- @@master = ./layouts/default.html-->
+
+<!-- @@block = title-->
+<title>Главная</title>
+<!-- @@close-->
+
+<!-- @@block = styles-->
+
+<!-- @@close-->
+
+<!-- @@block = scripts-->
+<!-- @@close-->
+
+<!-- @@block = content-->
+<style>
+    .components {
+        padding: 2rem;
+    }
+
+    .components__icons {
+        background: #e7d8c3;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
+    .components__icons .icon {
+        font-size: 4rem;
+        width: 1em;
+        height: 1em;
+    }
+
+    .components__350 {
+        max-width: 350px;
+    }
+
+    .components__500 {
+        max-width: 500px;
+    }
+
+    .components__600 {
+        max-width: 600px;
+    }
+
+    .components__800 {
+        max-width: 800px;
+    }
+
+    .components__1000 {
+        max-width: 1000px;
+    }
+
+    .components__1200 {
+        max-width: 1200px;
+    }
+
+    .components__title {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .components__space {
+        height: 5rem;
+    }
+</style>
+
+<main>
+    <div class="components">
+        <nav class="nav-tabs js-tabs">
+            <ul>
+                <li class="active"><a href="#tab-buttons">buttons</a></li>
+                <li><a href="#tab-inputs">inputs</a></li>
+                <li><a href="#tab-selects">selects</a></li>
+                <li><a href="#tab-icons">icons</a></li>
+                <li><a href="#tab-panels">panels</a></li>
+                <li><a href="#tab-sliders">sliders</a></li>
+                <li><a href="#tab-forms">forms</a></li>
+                <li><a href="#tab-popups">popups</a></li>
+                <li><a href="#tab-cards">cards</a></li>
+                <li><a href="#tab-navs">navs</a></li>
+                <li><a href="#tab-props">props</a></li>
+                <li><a href="#tab-lists">lists</a></li>
+            </ul>
+        </nav>
+
+        <div class="tabs-content">
+            <div class="active" id="tab-buttons"></div>
+            <div id="tab-buttons"></div>
+            <div id="tab-inputs"></div>
+            <div id="tab-selects"></div>
+            <div id="tab-icons">
+                <div class="components__icons">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow-down"></use></svg
+                    ><svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use></svg
+                    ><svg class="icon">
+                        <use
+                            xlink:href="img/sprite.svg#arrow-right--thin"
+                        ></use></svg
+                    ><svg class="icon">
+                        <use xlink:href="img/sprite.svg#email"></use></svg
+                    ><svg class="icon">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div id="tab-panels"></div>
+            <div id="tab-sliders"></div>
+            <div id="tab-forms"></div>
+            <div id="tab-popups"></div>
+            <div id="tab-cards"></div>
+            <div id="tab-navs"></div>
+            <div id="tab-props"></div>
+            <div id="tab-lists"></div>
+        </div>
+    </div>
+</main>
+<!-- @@close-->

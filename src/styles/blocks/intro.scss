@@ -1,0 +1,23 @@
+.intro {
+    color: #fff;
+
+    &__center {
+        position: relative;
+        padding-top: 33rem;
+    }
+
+    &__title {
+        font-size: 8rem;
+        font-weight: 500;
+        line-height: calc(90 / 80);
+    }
+
+    &__desc {
+        position: absolute;
+        right: 0;
+        top: 32.5rem;
+        text-align: right;
+        font-size: 2rem;
+        line-height: calc(32 / 20);
+    }
+}

@@ -1,0 +1,55 @@
+@import "./vendor/meyer-reset.scss";
+@import "./helpers/reset.scss";
+@import "./helpers/mixins.scss";
+@import "./helpers/helpers.scss";
+
+:root {
+    --side-padding: 4.8rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    text-size-adjust: none;
+    min-width: 320px;
+    font-family: "Manrope";
+    background: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+img[data-src] {
+    visibility: hidden;
+}
+
+a,
+button {
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+}
+
+@import "./blocks/page.scss";
+@import "./blocks/buttons/index.scss";
+@import "./blocks/inputs/index.scss";
+@import "./blocks/selects/index.scss";
+@import "./blocks/navs/index.scss";
+@import "./blocks/tabs-content.scss";
+@import "./blocks/counts.scss";
+@import "./blocks/intro.scss";

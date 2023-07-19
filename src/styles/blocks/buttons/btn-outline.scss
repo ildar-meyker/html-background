@@ -1,0 +1,31 @@
+.btn-outline {
+    border: 2px solid #fff;
+    padding: 3rem 1.4rem 1.2rem 1.4rem;
+    border-radius: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 21rem;
+    gap: 1.6rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: calc(24 / 14);
+    letter-spacing: -0.14px;
+    color: #fff;
+
+    &__icon {
+        flex: 0 0 auto;
+        width: 2.4rem;
+        height: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #ffcb25;
+
+        .icon {
+            font-size: 1rem;
+        }
+    }
+}
