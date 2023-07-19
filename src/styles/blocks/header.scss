@@ -10,4 +10,16 @@
         display: flex;
         align-items: center;
     }
+
+    &__col-menu {
+        margin-left: 9.6rem;
+    }
+
+    &__col-links {
+        margin-left: auto;
+    }
+
+    &__col-icons {
+        margin-left: 2.8rem;
+    }
 }

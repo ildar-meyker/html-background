@@ -1,6 +1,6 @@
-.btn-outline {
+.btn-normal {
     border: 1px solid #fff;
-    padding: 3.1rem 1.5rem 1.3rem 1.5rem;
+    padding: 1.3rem 1.5rem;
     border-radius: 1.4rem;
     display: flex;
     justify-content: space-between;
@@ -13,6 +13,8 @@
     line-height: calc(24 / 14);
     letter-spacing: -0.14px;
     color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
 
     &__icon {
         flex: 0 0 auto;

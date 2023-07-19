@@ -213,14 +213,14 @@ input[type=number] {
   height: 100%;
 }
 
-.nice-link {
+.nice-link, .nav-top a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 1px;
   transition: background-size 0.25s ease-out, color 0.2s;
 }
-.nice-link:hover {
+.nice-link:hover, .nav-top a:hover {
   background-size: 100% 1px;
 }
 .nice-link--active {
@@ -339,6 +339,15 @@ a {
   display: flex;
   align-items: center;
 }
+.header__col-menu {
+  margin-left: 9.6rem;
+}
+.header__col-links {
+  margin-left: auto;
+}
+.header__col-icons {
+  margin-left: 2.8rem;
+}
 
 .btn {
   display: inline-block;
@@ -373,8 +382,8 @@ a {
 }
 
 .btn-filled {
-  border: 2px solid transparent;
-  padding: 3rem 1.4rem 1.2rem 1.4rem;
+  border: 1px solid transparent;
+  padding: 3.1rem 1.5rem 1.3rem 1.5rem;
   border-radius: 1.4rem;
   background: #ffcb25;
   display: flex;
@@ -410,8 +419,8 @@ a {
 }
 
 .btn-outline {
-  border: 2px solid #fff;
-  padding: 3rem 1.4rem 1.2rem 1.4rem;
+  border: 1px solid #fff;
+  padding: 3.1rem 1.5rem 1.3rem 1.5rem;
   border-radius: 1.4rem;
   display: flex;
   justify-content: space-between;
@@ -439,6 +448,39 @@ a {
   font-size: 1rem;
 }
 
+.btn-normal {
+  border: 1px solid #fff;
+  padding: 1.3rem 1.5rem;
+  border-radius: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 21rem;
+  gap: 1.6rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7142857143;
+  letter-spacing: -0.14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.btn-normal__icon {
+  flex: 0 0 auto;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ffcb25;
+}
+.btn-normal__icon .icon {
+  font-size: 1rem;
+}
+
 .nav-tabs ul {
   display: flex;
   gap: 2rem;
@@ -456,6 +498,41 @@ a {
 }
 .nav-tabs a:hover {
   color: #8389a3;
+}
+
+.nav-icons ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-icons a {
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.nav-icons a .icon {
+  font-size: 1.8rem;
+}
+
+.nav-top ul {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.nav-top li:last-child {
+  padding-left: 1.2rem;
+}
+.nav-top a {
+  padding: 0.2em 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7142857143;
+  letter-spacing: -0.14px;
+  color: #fff;
 }
 
 .tabs-content > div {
