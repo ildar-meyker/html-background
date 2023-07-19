@@ -25,6 +25,22 @@ if (pubdate < new Date()) {
 
 /***/ }),
 
+/***/ "./src/js/modules/masks.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/masks.js ***!
+  \*********************************/
+/***/ (function() {
+
+$(function () {
+  $(".js-phone").each(function () {
+    IMask(this, {
+      mask: "+{7}(000)000-00-00"
+    });
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/tabs.js":
 /*!********************************!*\
   !*** ./src/js/modules/tabs.js ***!
@@ -137,6 +153,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_developers__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_developers__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_tabs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/masks */ "./src/js/modules/masks.js");
+/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_masks__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 }();

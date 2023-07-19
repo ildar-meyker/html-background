@@ -837,6 +837,10 @@ a {
   line-height: 1.2;
   color: #ffcb25;
 }
+.contact__title__value {
+  display: inline-block;
+  animation: scrollLeft 7s linear infinite;
+}
 .contact__sep {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -871,4 +875,13 @@ a {
   width: 50%;
   padding-right: 0.8rem;
   margin-top: 2rem;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
 }

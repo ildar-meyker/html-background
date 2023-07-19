@@ -11,6 +11,11 @@
         font-weight: 500;
         line-height: 1.2;
         color: #ffcb25;
+
+        &__value {
+            display: inline-block;
+            animation: scrollLeft 7s linear infinite;
+        }
     }
 
     &__sep {
@@ -53,5 +58,15 @@
         width: 50%;
         padding-right: 0.8rem;
         margin-top: 2rem;
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33.33%);
     }
 }
