@@ -389,7 +389,7 @@ a {
   border: 1px solid transparent;
   padding: 3.1rem 1.5rem 1.3rem 1.5rem;
   border-radius: 1.4rem;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   min-width: 21rem;
@@ -839,7 +839,6 @@ a {
 }
 .contact__title__value {
   display: inline-block;
-  animation: scrollLeft 7s linear infinite;
 }
 .contact__sep {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -884,4 +883,118 @@ a {
   100% {
     transform: translateX(-33.33%);
   }
+}
+.offices {
+  padding: 2.2rem 0 8rem 0;
+  border-radius: 3rem 3rem 0px 0px;
+  background: #e9e8e9;
+}
+.offices__title {
+  font-size: 20rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.8rem;
+  color: #fff;
+}
+.offices__list {
+  margin-left: 33.33%;
+  margin-bottom: 7rem;
+  margin-top: 3rem;
+}
+.offices__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.8rem;
+}
+.offices__col {
+  flex: 0 0 auto;
+  padding: 0 0.8rem;
+  width: 50%;
+}
+.offices__item {
+  display: block;
+  position: relative;
+  padding: 2rem 0 4rem 0;
+  border-top: 1px solid rgba(105, 119, 144, 0.5);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.offices__item:after {
+  content: " ";
+  transition: all 0.2s;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: url(../img/icons/arrow-offices.svg);
+  opacity: 0;
+  position: absolute;
+  right: 20%;
+  top: 2rem;
+}
+.offices__item:hover:after {
+  opacity: 1;
+}
+.offices__name {
+  display: block;
+  padding-right: calc(20% + 4.4rem + 2rem);
+}
+.offices__index {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  font-weight: 500;
+  color: #b4bbc7;
+}
+.offices__point {
+  display: flex;
+  margin: 0 -0.8rem;
+  margin-top: 1.6rem;
+}
+.offices__point__panel {
+  padding: 2rem 1.6rem;
+  border-radius: 1.4rem;
+  background: #fff;
+  color: #000;
+}
+.offices__point__left {
+  flex: 0 0 auto;
+  padding: 0 0.8rem;
+  width: 33.33%;
+}
+.offices__point__right {
+  flex: 0 0 auto;
+  padding: 0 0.8rem;
+  width: 66.66%;
+}
+.offices__point__panel {
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+}
+.offices__point__title {
+  padding-top: 0.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.offices__point__text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7142857143;
+  letter-spacing: -0.14px;
+}
+.offices__point__btn {
+  margin-top: auto;
+  text-align: right;
+}
+.offices__point__image {
+  height: 40rem;
+  border-radius: 1.4rem;
+  overflow: hidden;
+}
+.offices__point__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
