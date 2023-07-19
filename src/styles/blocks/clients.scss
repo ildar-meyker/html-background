@@ -1,7 +1,13 @@
 .clients {
-    padding-top: 5rem;
-    padding-bottom: 9.6rem;
-    color: #fff;
+    background: #e9e8e9;
+
+    &__inner {
+        border-radius: 3rem 3rem 0px 0px;
+        background: #000;
+        padding-top: 5rem;
+        padding-bottom: 9.6rem;
+        color: #fff;
+    }
 
     &__title {
         margin-bottom: 1rem;

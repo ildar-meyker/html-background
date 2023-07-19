@@ -1,0 +1,85 @@
+.footer {
+    padding-top: 6.3rem;
+    border-radius: 3rem 3rem 0px 0px;
+    background: #191919;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            flex: 0 0 auto;
+            width: 17.5rem;
+        }
+
+        &__address {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: right;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: calc(24 / 20);
+            color: #fff;
+        }
+    }
+
+    &__menu {
+        margin-top: 5rem;
+        display: flex;
+
+        &__col {
+            flex-grow: 1;
+            padding-right: 13rem;
+        }
+
+        &__title {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: calc(14 / 24);
+            letter-spacing: -0.14px;
+            color: #ffcb25;
+        }
+
+        &__list {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: calc(28 / 12);
+            color: #e9e8e9;
+
+            &--2-cols {
+                column-count: 2;
+                column-gap: 2.4rem;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 5rem;
+        border-top: 1px solid rgba(105, 119, 144, 0.5);
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: calc(28 / 12);
+        color: #fff;
+    }
+
+    &__dev {
+        display: flex;
+        align-items: center;
+
+        &__label {
+            padding-top: 0.5em;
+        }
+
+        &__logo {
+            flex: 0 0 auto;
+            width: 14.3rem;
+        }
+    }
+}
