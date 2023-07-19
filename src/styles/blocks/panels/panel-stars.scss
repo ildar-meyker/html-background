@@ -1,0 +1,36 @@
+.panel-stars {
+    position: relative;
+    padding: 3.6rem 4.6rem;
+    border: 2px solid #ffcb25;
+    border-radius: 2rem;
+
+    &__title {
+        margin-bottom: 1.7rem;
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #ffcb25;
+    }
+
+    &__desc {
+        margin-right: 38rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: calc(32 / 20);
+        color: #fff;
+    }
+
+    &__btn {
+        margin-top: 3.2rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &__image {
+        position: absolute;
+        right: 9rem;
+        height: 100%;
+        top: 0;
+        width: 19rem;
+        object-fit: contain;
+    }
+}

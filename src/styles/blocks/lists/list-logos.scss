@@ -1,0 +1,22 @@
+.list-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.8rem;
+    gap: 1.6rem 0;
+
+    &__col {
+        flex: 0 0 auto;
+        padding: 0 0.8rem;
+        width: 20%;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(#fff, 0.1);
+        border-radius: 1.4rem;
+        height: 20rem;
+        padding: 0 2rem;
+    }
+}
