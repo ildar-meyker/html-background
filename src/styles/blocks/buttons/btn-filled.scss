@@ -1,8 +1,8 @@
 .btn-filled {
+    transition: all 0.4s;
     border: 1px solid transparent;
     padding: 3.1rem 1.5rem 1.3rem 1.5rem;
     border-radius: 1.4rem;
-    background: #ffcb25;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,10 +23,25 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background: #fff;
 
         .icon {
             font-size: 1rem;
+        }
+    }
+
+    &--yellow {
+        background: #ffcb25;
+
+        .btn-filled__icon {
+            background: #fff;
+        }
+
+        &:hover {
+            background: #fff;
+
+            .btn-filled__icon {
+                background: #ffcb25;
+            }
         }
     }
 

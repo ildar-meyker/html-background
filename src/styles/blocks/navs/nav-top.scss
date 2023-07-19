@@ -12,12 +12,15 @@
     }
 
     a {
-        @extend .nice-link;
         padding: 0.2em 0;
         font-size: 1.4rem;
         font-weight: 700;
         line-height: calc(24 / 14);
         letter-spacing: -0.14px;
         color: #fff;
+
+        &:hover {
+            color: #ffcb25;
+        }
     }
 }

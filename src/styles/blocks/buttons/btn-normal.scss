@@ -1,4 +1,5 @@
 .btn-normal {
+    transition: all 0.4s;
     border: 1px solid #fff;
     padding: 1.3rem 1.5rem;
     border-radius: 1.4rem;
@@ -29,5 +30,10 @@
         .icon {
             font-size: 1rem;
         }
+    }
+
+    &:hover {
+        background: #fff;
+        color: #000;
     }
 }
