@@ -63,6 +63,11 @@
     .components__space {
         height: 5rem;
     }
+
+    .components__white {
+        background: #fff;
+        padding: 20px;
+    }
 </style>
 
 <main>
@@ -85,9 +90,82 @@
         </nav>
 
         <div class="tabs-content">
-            <div class="active" id="tab-buttons"></div>
-            <div id="tab-buttons"></div>
-            <div id="tab-inputs"></div>
+            <div class="active" id="tab-buttons">
+                <button class="btn btn-normal">
+                    <span>Наши услуги</span>
+                    <span class="btn-normal__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+
+                <button class="btn btn-filled btn-filled--white">
+                    <span>Консультация</span>
+                    <span class="btn-filled__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+
+                <button class="btn btn-filled btn-filled--yellow-to-white">
+                    <span>Консультация</span>
+                    <span class="btn-filled__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+
+                <button class="btn btn-outline">
+                    <span>О компании</span>
+                    <span class="btn-outline__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+
+                <button class="btn btn-filled btn-filled--yellow-to-dark">
+                    <span>Все услуги</span>
+                    <span class="btn-filled__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+
+                <button class="btn btn-filled btn-filled--gray-to-yellow">
+                    <span>Отправить</span>
+                    <span class="btn-filled__icon">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <div class="components__space"></div>
+            </div>
+            <div id="tab-inputs">
+                <div class="components__500">
+                    <div class="input-default">
+                        <input type="text" placeholder="Имя" />
+                    </div>
+                </div>
+
+                <div class="components__space"></div>
+            </div>
             <div id="tab-selects"></div>
             <div id="tab-icons">
                 <div class="components__icons">
@@ -113,7 +191,143 @@
             <div id="tab-cards"></div>
             <div id="tab-navs"></div>
             <div id="tab-props"></div>
-            <div id="tab-lists"></div>
+            <div id="tab-lists">
+                <div class="components__800">
+                    <div class="components__white">
+                        <ul class="list-nums list-nums--offices">
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name"
+                                        >Более 15 видов услуг для юридических
+                                        лиц</span
+                                    >
+                                    <span class="list-nums__index">01</span>
+                                </a>
+                            </li>
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Возможность полного абонентского
+                                        сопровождения компании
+                                    </span>
+                                    <span class="list-nums__index">02</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Оперативная клиентская поддержка –
+                                        первая консультация доступна сразу после
+                                        обращения
+                                    </span>
+                                    <span class="list-nums__index">03</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Штат профессиональных сотрудников с
+                                        именем и опытом
+                                    </span>
+                                    <span class="list-nums__index">04</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Активное участие в жизни российского
+                                        делового сообщества
+                                    </span>
+                                    <span class="list-nums__index">05</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Индивидуальный подход как для небольших,
+                                        так и для крупных компаний
+                                    </span>
+                                    <span class="list-nums__index">06</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="components__space"></div>
+
+                <div class="components__800">
+                    <div class="components__white">
+                        <ul class="list-nums">
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name"
+                                        >Более 15 видов услуг для юридических
+                                        лиц</span
+                                    >
+                                    <span class="list-nums__index">01</span>
+                                </a>
+                            </li>
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Возможность полного абонентского
+                                        сопровождения компании
+                                    </span>
+                                    <span class="list-nums__index">02</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Оперативная клиентская поддержка –
+                                        первая консультация доступна сразу после
+                                        обращения
+                                    </span>
+                                    <span class="list-nums__index">03</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Штат профессиональных сотрудников с
+                                        именем и опытом
+                                    </span>
+                                    <span class="list-nums__index">04</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Активное участие в жизни российского
+                                        делового сообщества
+                                    </span>
+                                    <span class="list-nums__index">05</span>
+                                </a>
+                            </li>
+
+                            <li class="list-nums__col">
+                                <a href="#" class="list-nums__item">
+                                    <span class="list-nums__name">
+                                        Индивидуальный подход как для небольших,
+                                        так и для крупных компаний
+                                    </span>
+                                    <span class="list-nums__index">06</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="components__space"></div>
+            </div>
         </div>
     </div>
 </main>

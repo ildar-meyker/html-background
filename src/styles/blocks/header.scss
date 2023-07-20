@@ -6,8 +6,16 @@
     width: 100%;
     padding: 2rem 0;
 
-    &__col-logo {
+    &__logo {
         width: 13.1rem;
+        background: url("../img/logos/background.svg") no-repeat 50% 50% /
+            contain;
+
+        &:before {
+            content: " ";
+            padding-top: 41.67%;
+            display: block;
+        }
     }
 
     &__center {
@@ -15,15 +23,19 @@
         align-items: center;
     }
 
-    &__col-menu {
+    &__menu {
         margin-left: 9.6rem;
     }
 
-    &__col-links {
+    &__links {
         margin-left: auto;
     }
 
-    &__col-icons {
+    &__icons {
         margin-left: 2.8rem;
+    }
+
+    &__space {
+        height: 9.5rem;
     }
 }

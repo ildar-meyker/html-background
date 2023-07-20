@@ -1,4 +1,35 @@
 .page {
+    background: #000;
+
+    &--white {
+        background: #fff;
+
+        .nav-top a {
+            color: #000;
+        }
+
+        .nav-icons a {
+            border-color: #000;
+
+            .icon {
+                stroke: #000;
+            }
+        }
+
+        .header .btn-normal {
+            border-color: #000;
+            color: #000;
+
+            &:hover {
+                border-color: #ffcb25;
+            }
+        }
+
+        .header__logo {
+            background-image: url("../img/logos/background--dark.svg");
+        }
+    }
+
     &__center {
         padding: 0 var(--side-padding);
         box-sizing: content-box;

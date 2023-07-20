@@ -1,13 +1,10 @@
 .clients {
-    background: #e9e8e9;
-
-    &__inner {
-        border-radius: 3rem 3rem 0px 0px;
-        background: #000;
-        padding-top: 5rem;
-        padding-bottom: 9.6rem;
-        color: #fff;
-    }
+    border-radius: 3rem 3rem 0px 0px;
+    background: #000;
+    padding-top: 5rem;
+    padding-bottom: calc(9.6rem + 3rem);
+    margin-bottom: -3rem;
+    color: #fff;
 
     &__title {
         margin-bottom: 1rem;

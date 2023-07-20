@@ -1,6 +1,7 @@
 .counts {
     padding-top: 6rem;
-    padding-bottom: 3.7rem;
+    padding-bottom: calc(3.7rem + 3rem);
+    margin-bottom: -3rem;
     border-radius: 3rem 3rem 0px 0px;
     background: #000;
     color: #fff;

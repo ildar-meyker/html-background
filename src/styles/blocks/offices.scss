@@ -1,5 +1,6 @@
 .offices {
-    padding: 2.2rem 0 8rem 0;
+    padding: 2.2rem 0 calc(8rem + 3rem) 0;
+    margin-bottom: -3rem;
     border-radius: 3rem 3rem 0px 0px;
     background: #e9e8e9;
 
@@ -26,7 +27,6 @@
             padding: 2rem 1.6rem;
             border-radius: 1.4rem;
             background: #fff;
-            color: #000;
         }
 
         &__left {

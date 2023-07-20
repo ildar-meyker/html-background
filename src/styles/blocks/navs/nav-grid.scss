@@ -1,0 +1,30 @@
+.nav-grid {
+    ul {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin: 3rem 0 2.2rem 0;
+        gap: 1.3rem;
+    }
+
+    li {
+        &.active {
+            a {
+                text-decoration: underline;
+                color: #000000;
+            }
+        }
+    }
+
+    a {
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: calc(24 / 14);
+        letter-spacing: -0.14px;
+        color: rgba(0, 0, 0, 0.25);
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}

@@ -19,7 +19,7 @@ body {
     text-size-adjust: none;
     min-width: 320px;
     font-family: "Manrope";
-    background: #000;
+    color: #000;
 }
 
 img {
@@ -61,3 +61,4 @@ a {
 @import "./blocks/offices.scss";
 @import "./blocks/clients.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/about.scss";
