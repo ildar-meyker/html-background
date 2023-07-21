@@ -45,20 +45,28 @@ a {
     height: 1em;
 }
 
+@import "./blocks/articles/index.scss";
+@import "./blocks/buttons/index.scss";
+@import "./blocks/cards/index.scss";
+@import "./blocks/forms/index.scss";
+@import "./blocks/inputs/index.scss";
+@import "./blocks/lists/index.scss";
+@import "./blocks/navs/index.scss";
+@import "./blocks/panels/index.scss";
+@import "./blocks/promos/index.scss";
+@import "./blocks/selects/index.scss";
+@import "./blocks/sliders/index.scss";
+@import "./blocks/tables/index.scss";
+
+@import "./blocks/tabs-content.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
-@import "./blocks/buttons/index.scss";
-@import "./blocks/inputs/index.scss";
-@import "./blocks/selects/index.scss";
-@import "./blocks/navs/index.scss";
-@import "./blocks/lists/index.scss";
-@import "./blocks/panels/index.scss";
-@import "./blocks/tabs-content.scss";
+@import "./blocks/footer.scss";
 @import "./blocks/counts.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/services.scss";
 @import "./blocks/contact.scss";
 @import "./blocks/offices.scss";
 @import "./blocks/clients.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/about.scss";
+@import "./blocks/about-page.scss";
+@import "./blocks/about-service.scss";
