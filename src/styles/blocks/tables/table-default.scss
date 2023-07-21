@@ -1,2 +1,20 @@
 .table-default {
+    table {
+        width: 100%;
+    }
+
+    tr {
+        &:last-child {
+            td {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    td {
+        padding: 2.4rem 3rem;
+        border-bottom: 1px solid #b4bbc7;
+        font-size: 2rem;
+        line-height: calc(32 / 20);
+    }
 }
