@@ -616,12 +616,15 @@ a {
 
 .list-cards {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -1rem;
+  gap: 2rem 0;
 }
 .list-cards__col {
   flex: 0 0 auto;
-  width: 50%;
   padding: 0 1rem;
+  width: 50%;
+  display: flex;
 }
 .list-cards__item {
   transition: all 0.2s;
@@ -629,7 +632,7 @@ a {
   padding: 5rem;
   border-radius: 1.4rem;
   border: 1px solid #000;
-  margin-top: 2rem;
+  flex-grow: 1;
 }
 .list-cards__item:first-child {
   margin-top: 0;

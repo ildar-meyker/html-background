@@ -1,11 +1,14 @@
 .list-cards {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -1rem;
+    gap: 2rem 0;
 
     &__col {
         flex: 0 0 auto;
-        width: 50%;
         padding: 0 1rem;
+        width: 50%;
+        display: flex;
     }
 
     &__item {
@@ -14,7 +17,7 @@
         padding: 5rem;
         border-radius: 1.4rem;
         border: 1px solid #000;
-        margin-top: 2rem;
+        flex-grow: 1;
 
         &:first-child {
             margin-top: 0;
