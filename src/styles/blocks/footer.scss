@@ -31,7 +31,7 @@
 
         &__col {
             flex-grow: 1;
-            padding-right: 13rem;
+            padding-right: clamp(8rem, 7vw, 13rem);
         }
 
         &__title {
@@ -80,6 +80,59 @@
         &__logo {
             flex: 0 0 auto;
             width: 14.3rem;
+        }
+    }
+}
+
+@media (max-width: 1198.98px) {
+    .footer {
+        &__menu {
+            &__list {
+                &--2-cols {
+                    column-count: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .footer {
+        &__top {
+            &__logo {
+                width: 10rem;
+            }
+        }
+
+        &__menu {
+            flex-wrap: wrap;
+            gap: 4rem 0;
+
+            &__list {
+                font-size: 1.4rem;
+            }
+        }
+
+        &__bottom {
+            height: auto;
+            display: block;
+            padding: 2rem 0;
+        }
+
+        &__dev {
+        }
+    }
+}
+
+@media (max-width: 599.98px) {
+    .footer {
+        &__top {
+            display: block;
+
+            &__address {
+                text-align: left;
+                margin-top: 3rem;
+            }
         }
     }
 }

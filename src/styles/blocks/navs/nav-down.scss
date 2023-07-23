@@ -81,3 +81,20 @@
         margin-top: 17rem;
     }
 }
+
+@media (max-width: 1199.98px) {
+    .nav-down {
+        &__left {
+            display: none;
+        }
+
+        &__title {
+            margin-left: 0;
+        }
+
+        &__nav {
+            flex-wrap: wrap;
+            gap: 5rem;
+        }
+    }
+}

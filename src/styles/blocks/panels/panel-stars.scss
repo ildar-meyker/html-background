@@ -34,3 +34,30 @@
         object-fit: contain;
     }
 }
+
+@media (max-width: 1199.98px) {
+    .panel-stars {
+        &__desc {
+            margin-right: 25rem;
+        }
+
+        &__image {
+            right: 7rem;
+            width: 14rem;
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .panel-stars {
+        padding: 3rem;
+
+        &__desc {
+            margin-right: 0;
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+}

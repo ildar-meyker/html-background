@@ -21,7 +21,8 @@
             transition: all 0.2s;
             width: 4.4rem;
             height: 4.4rem;
-            background: url(../img/icons/arrow-services.svg);
+            background: url(../img/icons/arrow-services.svg) no-repeat 50% 50% /
+                contain;
             opacity: 0;
             position: absolute;
             right: 2.4rem;

@@ -76,3 +76,13 @@ a {
 @import "./blocks/logos.scss";
 @import "./blocks/features.scss";
 @import "./blocks/gallery.scss";
+
+@media (max-width: 899.98px) {
+    :root {
+        --side-padding: 2rem;
+    }
+
+    html {
+        font-size: 9px;
+    }
+}

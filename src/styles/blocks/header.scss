@@ -44,3 +44,28 @@
         display: none;
     }
 }
+
+@media (max-width: 1199.98px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__icons {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+            margin-left: 3rem;
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .header {
+        &__logo {
+            width: 10rem;
+        }
+    }
+}

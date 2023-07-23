@@ -20,3 +20,27 @@
         padding: 0 2rem;
     }
 }
+
+@media (max-width: 1199.98px) {
+    .logos {
+        &__col {
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .logos {
+        &__col {
+            width: 33.33%;
+        }
+    }
+}
+
+@media (max-width: 599.98px) {
+    .logos {
+        &__col {
+            width: 50%;
+        }
+    }
+}
