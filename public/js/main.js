@@ -1,7 +1,10 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 968:
+/***/ "./src/js/modules/developers.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/developers.js ***!
+  \**************************************/
 /***/ (function() {
 
 var iconStyles = " font-size:50px;";
@@ -22,7 +25,10 @@ if (pubdate < new Date()) {
 
 /***/ }),
 
-/***/ 488:
+/***/ "./src/js/modules/masks.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/masks.js ***!
+  \*********************************/
 /***/ (function() {
 
 $(function () {
@@ -35,7 +41,47 @@ $(function () {
 
 /***/ }),
 
-/***/ 241:
+/***/ "./src/js/modules/submenu.js":
+/*!***********************************!*\
+  !*** ./src/js/modules/submenu.js ***!
+  \***********************************/
+/***/ (function() {
+
+var timer = null;
+var $activePanel = $();
+var $activeItem = $();
+
+function closePanel() {
+  $activePanel.removeClass("active");
+  $activeItem.removeClass("active");
+}
+
+$(".js-submenu-item").on("mouseenter", function () {
+  clearTimeout(timer);
+  closePanel();
+  var target = $(this).data("submenu");
+  if (!target) return;
+  $activePanel = $("#" + target);
+  $activeItem = $(this);
+  $activePanel.addClass("active");
+  $activeItem.addClass("active");
+});
+$(".js-submenu-item").on("mouseleave", function () {
+  timer = setTimeout(closePanel, 200);
+});
+$(".js-submenu").on("mouseenter", function () {
+  clearTimeout(timer);
+});
+$(".js-submenu").on("mouseleave", function () {
+  timer = setTimeout(closePanel, 200);
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/tabs.js":
+/*!********************************!*\
+  !*** ./src/js/modules/tabs.js ***!
+  \********************************/
 /***/ (function() {
 
 var setActiveButton = function setActiveButton($tabs, index) {
@@ -120,17 +166,35 @@ $(function () {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
 /******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
 "use strict";
-/* harmony import */ var _modules_developers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(968);
+/*!************************!*\
+  !*** ./src/js/main.js ***!
+  \************************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_developers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/developers */ "./src/js/modules/developers.js");
 /* harmony import */ var _modules_developers__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_developers__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(241);
+/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
 /* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_tabs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(488);
+/* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/masks */ "./src/js/modules/masks.js");
 /* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_masks__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_submenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/submenu */ "./src/js/modules/submenu.js");
+/* harmony import */ var _modules_submenu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_submenu__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 

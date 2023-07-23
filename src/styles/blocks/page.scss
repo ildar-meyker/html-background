@@ -28,6 +28,19 @@
         .header__logo {
             background-image: url("../img/logos/background--dark.svg");
         }
+
+        .nav-down {
+            color: #fff;
+        }
+        .nav-down__left {
+            color: rgba(#fff, 0.8);
+        }
+        .nav-down__body {
+            background: #000;
+        }
+
+        .nav-down__list a {
+        }
     }
 
     &__center {
