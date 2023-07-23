@@ -511,6 +511,34 @@ a {
   transform: rotate(90deg);
 }
 
+.btn-burger {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 0;
+}
+.btn-burger span {
+  transition: all 0.2s;
+  display: block;
+  background: #000;
+  margin: 5px 0;
+  height: 3px;
+  width: 23px;
+}
+.btn-burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.btn-burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.btn-burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .input-default input {
   background: transparent;
   border: 0;
@@ -990,6 +1018,9 @@ a {
 }
 .header__space {
   height: 9.5rem;
+}
+.header__burger {
+  display: none;
 }
 
 .footer {
@@ -1560,7 +1591,7 @@ a {
   width: 33.33%;
 }
 .features__item {
-  padding: 2rem 0 4rem 0;
+  padding: 2rem 8rem 4rem 0;
   border-top: 1px solid rgba(105, 119, 144, 0.5);
   position: relative;
 }
