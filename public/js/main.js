@@ -1,6 +1,21 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/customScroll.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/customScroll.js ***!
+  \****************************************/
+/***/ (function() {
+
+//
+$(function () {
+  $(".scroll-area").each(function () {
+    new SimpleBar(this);
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/developers.js":
 /*!**************************************!*\
   !*** ./src/js/modules/developers.js ***!
@@ -194,6 +209,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_masks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_masks__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_submenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/submenu */ "./src/js/modules/submenu.js");
 /* harmony import */ var _modules_submenu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_submenu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _modules_customScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/customScroll */ "./src/js/modules/customScroll.js");
+/* harmony import */ var _modules_customScroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_customScroll__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 

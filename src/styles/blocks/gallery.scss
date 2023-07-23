@@ -21,3 +21,11 @@
         }
     }
 }
+
+@media (max-width: 599.98px) {
+    .gallery {
+        &__item {
+            height: 40rem;
+        }
+    }
+}

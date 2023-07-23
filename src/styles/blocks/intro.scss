@@ -24,7 +24,7 @@
     }
 
     &__title {
-        font-size: clamp(6rem, 4vw, 8rem);
+        font-size: clamp(4rem, 5vw, 8rem);
         font-weight: 500;
         line-height: calc(90 / 80);
     }
@@ -55,6 +55,18 @@
 
         &__center {
             padding-bottom: 10rem;
+        }
+    }
+}
+
+@media (max-width: 599.98px) {
+    .intro {
+        &__desc {
+            padding-top: 15rem;
+
+            &__text {
+                font-size: 1.6rem;
+            }
         }
     }
 }

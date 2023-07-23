@@ -6,7 +6,9 @@
     ul {
         display: flex;
         align-items: center;
-        gap: 0.8rem;
+        gap: 0 0.8rem;
+        flex-wrap: wrap;
+        white-space: nowrap;
     }
 
     li {

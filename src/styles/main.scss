@@ -45,6 +45,10 @@ a {
     height: 1em;
 }
 
+.scroll-area {
+    overflow: auto;
+}
+
 @import "./blocks/articles/index.scss";
 @import "./blocks/buttons/index.scss";
 @import "./blocks/cards/index.scss";

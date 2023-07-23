@@ -69,3 +69,33 @@
         transform: translateX(-33.33%);
     }
 }
+
+@media (max-width: 599.98px) {
+    .contact {
+        &__col {
+            width: 100%;
+        }
+
+        &__tip {
+            width: auto;
+        }
+
+        &__btn {
+            width: auto;
+
+            button {
+                width: auto;
+            }
+        }
+
+        &__title {
+            font-size: 6rem;
+        }
+
+        &__desc {
+            br {
+                display: none;
+            }
+        }
+    }
+}

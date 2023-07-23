@@ -35,7 +35,7 @@
                     top: 0.5rem;
                     left: 0;
                     color: #b4bbc7;
-                    font-size: 2rem;
+                    font-size: 1em;
                     font-weight: 500;
                     line-height: calc(24 / 20);
                 }
@@ -47,8 +47,8 @@
                 &:before {
                     content: "";
                     position: absolute;
-                    top: 1.2rem;
-                    left: 1.2rem;
+                    top: 0.6em;
+                    left: 0.6em;
                     width: 0.8rem;
                     height: 0.8rem;
                     background: #ffcb25;
@@ -65,5 +65,17 @@
 
     &__tip {
         margin-top: 3rem;
+    }
+}
+
+@media (max-width: 599.98px) {
+    .article {
+        &__title {
+            font-size: 2.7rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+        }
     }
 }

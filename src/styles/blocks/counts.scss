@@ -109,3 +109,37 @@
         }
     }
 }
+
+@media (max-width: 599.98px) {
+    .counts {
+        &__desc {
+            font-size: 2.7rem;
+        }
+
+        &__col {
+            width: 100%;
+
+            &--staff {
+                transform: none;
+
+                .counts__item {
+                    margin-right: 0;
+                }
+            }
+
+            &--years {
+                margin-left: 0;
+            }
+        }
+
+        &__about {
+            &__right {
+                margin-bottom: 12rem;
+            }
+        }
+
+        &__label {
+            font-size: 2.7rem;
+        }
+    }
+}

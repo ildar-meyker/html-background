@@ -17,3 +17,11 @@
         }
     }
 }
+
+@media (max-width: 599.98px) {
+    .addresses {
+        &__title {
+            font-size: 2.7rem;
+        }
+    }
+}

@@ -12,9 +12,21 @@
     }
 
     td {
-        padding: 2.4rem 3rem;
+        padding: 2.4rem 3rem 2.4rem 0;
         border-bottom: 1px solid #b4bbc7;
         font-size: 2rem;
         line-height: calc(32 / 20);
+
+        &:first-child {
+            padding-left: 3rem;
+        }
+    }
+}
+
+@media (max-width: 599.98px) {
+    .table-default {
+        td {
+            font-size: 1.6rem;
+        }
     }
 }

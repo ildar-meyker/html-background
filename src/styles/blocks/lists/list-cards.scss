@@ -87,3 +87,11 @@
         }
     }
 }
+
+@media (max-width: 599.98px) {
+    .list-cards {
+        &__desc {
+            font-size: 1.6rem;
+        }
+    }
+}

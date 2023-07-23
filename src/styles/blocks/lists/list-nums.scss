@@ -79,5 +79,15 @@
         &__col {
             width: 100%;
         }
+
+        &__item {
+            &:after {
+                right: 15%;
+            }
+        }
+
+        &__name {
+            padding-right: calc(15% + 4.4rem + 2rem);
+        }
     }
 }

@@ -38,3 +38,14 @@
         position: relative;
     }
 }
+
+@media (max-width: 599.98px) {
+    .about-page {
+        &__title {
+            font-size: 4rem;
+        }
+        &__desc {
+            font-size: 1.6rem;
+        }
+    }
+}

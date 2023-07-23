@@ -55,3 +55,27 @@
         letter-spacing: -0.14px;
     }
 }
+
+@media (max-width: 899.98px) {
+    .features {
+        &__col {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 599.98px) {
+    .features {
+        &__col {
+            width: 100%;
+        }
+
+        &__item {
+            padding-right: 6rem;
+
+            &:after {
+                right: 0;
+            }
+        }
+    }
+}
