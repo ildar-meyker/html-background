@@ -1,6 +1,24 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/burger.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/burger.js ***!
+  \**********************************/
+/***/ (function() {
+
+function handleBurgerClick() {
+  var isActive = $(this).hasClass("active");
+  $(this).toggleClass("active", !isActive);
+  $("#nav-down").toggleClass("active", !isActive);
+}
+
+$(function () {
+  $(document).on("click", ".js-burger-open", handleBurgerClick);
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/customScroll.js":
 /*!****************************************!*\
   !*** ./src/js/modules/customScroll.js ***!
@@ -25,7 +43,7 @@ $(function () {
 var iconStyles = " font-size:50px;";
 var titleStyles = "font-size:12px; font-weight: bold;";
 var textStyles = "font-size:12px;";
-var pubdate = new Date("2023-09-21");
+var pubdate = new Date("2023-12-01");
 var log = console.log;
 
 function print() {
@@ -211,6 +229,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_submenu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_submenu__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _modules_customScroll__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/customScroll */ "./src/js/modules/customScroll.js");
 /* harmony import */ var _modules_customScroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_customScroll__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
+/* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_burger__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 

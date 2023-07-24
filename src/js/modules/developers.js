@@ -1,7 +1,7 @@
 const iconStyles = " font-size:50px;";
 const titleStyles = "font-size:12px; font-weight: bold;";
 const textStyles = "font-size:12px;";
-const pubdate = new Date("2023-09-21");
+const pubdate = new Date("2023-12-01");
 
 const log = console.log;
 

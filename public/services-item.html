@@ -22,7 +22,7 @@
             href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/main.css?t=1690155599353" />
+        <link rel="stylesheet" href="css/main.css?t=1690163525585" />
     </head>
 
     <body>
@@ -47,12 +47,14 @@
                 </button>
             </div>
             <div class="header__links">
-                <nav class="nav-top">
+                <nav class="nav-top nav-top--header">
                     <ul>
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Информация</a></li>
                         <li><a href="#">Контакты</a></li>
-                        <li><a href="#">8 (800) 333-13-13</a></li>
+                        <li class="d-block">
+                            <a href="#">8 (800) 333-13-13</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -81,7 +83,7 @@
                 </nav>
             </div>
             <div class="header__burger">
-                <button class="btn-burger">
+                <button class="btn-burger js-burger-open">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -95,6 +97,42 @@
 <nav class="nav-down" id="nav-down">
     <div class="page__center">
         <div class="nav-down__body js-submenu">
+            <div class="nav-down__addon">
+                <div class="nav-down__addon__top">
+                    <nav class="nav-top nav-top--addon">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Информация</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-down__addon__icons">
+                    <nav class="nav-icons">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="img/sprite.svg#email"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="img/sprite.svg#search"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
             <div class="nav-down__title">Услуги</div>
             <div class="nav-down__row">
                 <div class="nav-down__left">
@@ -928,7 +966,7 @@
 
 
 
-        <script src="js/main.js?t=1690155599353"></script>
+        <script src="js/main.js?t=1690163525585"></script>
 
         <div id="notify" class="notify"></div>
 

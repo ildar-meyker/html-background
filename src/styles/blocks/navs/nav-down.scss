@@ -81,10 +81,36 @@
     &__btn {
         margin-top: 17rem;
     }
+
+    &__addon {
+        &__top {
+            display: none;
+        }
+        &__icons {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 1199.98px) {
     .nav-down {
+        &__addon {
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+            margin-bottom: 4rem;
+
+            &__icons {
+                display: block;
+                filter: invert(1);
+                margin-left: auto;
+
+                a {
+                    background: none;
+                }
+            }
+        }
+
         &__left {
             display: none;
         }
@@ -96,6 +122,20 @@
         &__nav {
             flex-wrap: wrap;
             gap: 5rem;
+        }
+
+        &__btn {
+            margin-top: 5rem;
+        }
+    }
+}
+
+@media (max-width: 899.98px) {
+    .nav-down {
+        &__addon {
+            &__top {
+                display: block;
+            }
         }
     }
 }
