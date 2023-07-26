@@ -1064,6 +1064,7 @@ a {
 
 .page {
   background: #000;
+  overflow: hidden;
 }
 .page--white {
   background: #fff;

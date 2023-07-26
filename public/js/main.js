@@ -74,6 +74,55 @@ $(function () {
 
 /***/ }),
 
+/***/ "./src/js/modules/shiftTitle.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/shiftTitle.js ***!
+  \**************************************/
+/***/ (function() {
+
+var calculations = {};
+var $element = $();
+
+function handleScroll() {
+  var scrollTop = $(window).scrollTop();
+  var isVisible = scrollTop + calculations.windowHeight > calculations.offsetTop && calculations.offsetTop + calculations.blockHeight > scrollTop;
+
+  if (isVisible) {
+    var shiftValue = (scrollTop + calculations.windowHeight - calculations.offsetTop) / calculations.windowHeight;
+    $element.css("transform", "translateX(".concat(100 - 100 * shiftValue, "%)"));
+  }
+}
+
+function recalculate() {
+  calculations = {
+    offsetTop: $element.offset().top,
+    blockHeight: $element.outerHeight(),
+    windowHeight: $(window).height()
+  };
+}
+
+$(function () {
+  $element = $(".offices__title");
+  if ($element.length === 0) return;
+  recalculate();
+  var observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        $(window).on("scroll", handleScroll);
+      } else {
+        $(window).off("scroll", handleScroll);
+      }
+    });
+  }, {
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0
+  });
+  observer.observe($element[0]);
+  $(window).on("resize", recalculate);
+});
+
+/***/ }),
+
 /***/ "./src/js/modules/submenu.js":
 /*!***********************************!*\
   !*** ./src/js/modules/submenu.js ***!
@@ -231,6 +280,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_customScroll__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_customScroll__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_burger__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_shiftTitle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/shiftTitle */ "./src/js/modules/shiftTitle.js");
+/* harmony import */ var _modules_shiftTitle__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_shiftTitle__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 

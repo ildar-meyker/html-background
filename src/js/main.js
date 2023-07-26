@@ -4,3 +4,4 @@ import "./modules/masks";
 import "./modules/submenu";
 import "./modules/customScroll";
 import "./modules/burger";
+import "./modules/shiftTitle";
