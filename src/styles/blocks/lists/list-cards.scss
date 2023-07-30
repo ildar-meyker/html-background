@@ -24,25 +24,12 @@
             margin-top: 0;
         }
 
-        &:before {
-            transition: all 0.2;
-            content: " ";
-            position: absolute;
-            top: 4rem;
-            right: 5rem;
-            width: 4.4rem;
-            height: 4.4rem;
-            background: url(../img/icons/arrow-services.svg) no-repeat 50% 50% /
-                contain;
-            opacity: 0;
-        }
-
         &:hover {
             border-color: transparent;
             background: #ffcb25;
 
-            &:before {
-                opacity: 1;
+            .link-area {
+                cursor: url("../img/icons/arrow-services.svg") 22 22, auto;
             }
 
             .list-cards__num {

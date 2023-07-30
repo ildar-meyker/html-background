@@ -18,35 +18,19 @@
         font-weight: 700;
         line-height: calc(24 / 20);
 
-        &:after {
-            content: " ";
-            transition: all 0.2s;
-            width: 4.4rem;
-            height: 4.4rem;
-            background: url(../img/icons/arrow-services.svg) no-repeat 50% 50% /
-                contain;
-            opacity: 0;
-            position: absolute;
-            right: 20%;
-            top: 2rem;
-        }
-
         &:hover {
             color: #ffcb25;
+            cursor: url("../img/icons/arrow-services.svg") 22 22, auto;
 
             .services__index {
                 color: #ffcb25;
-            }
-
-            &:after {
-                opacity: 1;
             }
         }
     }
 
     &__name {
         display: block;
-        padding-right: calc(20% + 4.4rem + 2rem);
+        padding-right: calc(20% + 2rem);
     }
 
     &__index {
@@ -59,12 +43,9 @@
 
     &--offices {
         .list-nums__item {
-            &:after {
-                background-image: url(../img/icons/arrow-offices.svg);
-            }
-
             &:hover {
                 color: #000;
+                cursor: url("../img/icons/arrow-offices.svg") 22 22, auto;
 
                 .services__index {
                     color: #b4bbc7;
@@ -80,14 +61,8 @@
             width: 100%;
         }
 
-        &__item {
-            &:after {
-                right: 15%;
-            }
-        }
-
         &__name {
-            padding-right: calc(15% + 4.4rem + 2rem);
+            padding-right: calc(15% + 2rem);
         }
     }
 }

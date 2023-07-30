@@ -597,29 +597,16 @@ a {
   font-weight: 700;
   line-height: 1.2;
 }
-.list-nums__item:after {
-  content: " ";
-  transition: all 0.2s;
-  width: 4.4rem;
-  height: 4.4rem;
-  background: url(../img/icons/arrow-services.svg) no-repeat 50% 50%/contain;
-  opacity: 0;
-  position: absolute;
-  right: 20%;
-  top: 2rem;
-}
 .list-nums__item:hover {
   color: #ffcb25;
+  cursor: url("../img/icons/arrow-services.svg") 22 22, auto;
 }
 .list-nums__item:hover .services__index {
   color: #ffcb25;
 }
-.list-nums__item:hover:after {
-  opacity: 1;
-}
 .list-nums__name {
   display: block;
-  padding-right: calc(20% + 4.4rem + 2rem);
+  padding-right: calc(20% + 2rem);
 }
 .list-nums__index {
   position: absolute;
@@ -628,11 +615,9 @@ a {
   font-weight: 500;
   color: #b4bbc7;
 }
-.list-nums--offices .list-nums__item:after {
-  background-image: url(../img/icons/arrow-offices.svg);
-}
 .list-nums--offices .list-nums__item:hover {
   color: #000;
+  cursor: url("../img/icons/arrow-offices.svg") 22 22, auto;
 }
 .list-nums--offices .list-nums__item:hover .services__index {
   color: #b4bbc7;
@@ -642,11 +627,8 @@ a {
   .list-nums__col {
     width: 100%;
   }
-  .list-nums__item:after {
-    right: 15%;
-  }
   .list-nums__name {
-    padding-right: calc(15% + 4.4rem + 2rem);
+    padding-right: calc(15% + 2rem);
   }
 }
 .list-cards {
@@ -673,23 +655,12 @@ a {
 .list-cards__item:first-child {
   margin-top: 0;
 }
-.list-cards__item:before {
-  transition: all 0.2;
-  content: " ";
-  position: absolute;
-  top: 4rem;
-  right: 5rem;
-  width: 4.4rem;
-  height: 4.4rem;
-  background: url(../img/icons/arrow-services.svg) no-repeat 50% 50%/contain;
-  opacity: 0;
-}
 .list-cards__item:hover {
   border-color: transparent;
   background: #ffcb25;
 }
-.list-cards__item:hover:before {
-  opacity: 1;
+.list-cards__item:hover .link-area {
+  cursor: url("../img/icons/arrow-services.svg") 22 22, auto;
 }
 .list-cards__item:hover .list-cards__num {
   color: #000;
@@ -1227,6 +1198,9 @@ a {
        column-count: 2;
   -moz-column-gap: 2.4rem;
        column-gap: 2.4rem;
+}
+.footer__menu__list a:hover {
+  color: #fff;
 }
 .footer__bottom {
   margin-top: 5rem;
@@ -1952,22 +1926,11 @@ a {
   border-top: 1px solid rgba(105, 119, 144, 0.5);
   position: relative;
 }
-.features__item:after {
-  content: " ";
-  transition: all 0.2s;
-  width: 4.4rem;
-  height: 4.4rem;
-  background: url(../img/icons/arrow-services.svg) no-repeat 50% 50%/contain;
-  opacity: 0;
-  position: absolute;
-  right: 2.4rem;
-  top: 5rem;
-}
 .features__item:hover .features__title {
   color: #ffcb25;
 }
-.features__item:hover:after {
-  opacity: 1;
+.features__item:hover .link-area {
+  cursor: url("../img/icons/arrow-services.svg") 22 22, auto;
 }
 .features__title {
   transition: all 0.2s;
@@ -1994,9 +1957,6 @@ a {
   }
   .features__item {
     padding-right: 6rem;
-  }
-  .features__item:after {
-    right: 0;
   }
 }
 .gallery__row {
