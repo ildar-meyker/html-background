@@ -1820,7 +1820,7 @@ a {
   border-radius: 3rem 3rem 0px 0px;
   background: #fff;
 }
-.article--gray {
+.article[data-gray=Y] {
   background: #e9e8e9;
 }
 .article__title {
