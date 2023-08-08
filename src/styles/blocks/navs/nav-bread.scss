@@ -6,32 +6,38 @@
     ul {
         display: flex;
         align-items: center;
-        gap: 0 0.8rem;
         flex-wrap: wrap;
         white-space: nowrap;
     }
 
     li {
+        display: flex;
+        align-items: center;
         font-size: 1.2rem;
         font-weight: 300;
         line-height: calc(28 / 12);
         color: #b4bbc7;
 
+        &:after {
+            content: "→";
+            margin: 0 0.5em;
+            position: relative;
+            top: -0.2em;
+        }
+
         &:last-child {
-            display: none;
+            &:after {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 
     a {
         text-decoration: underline;
-    }
-
-    &__arrow {
-        position: relative;
-        top: -0.2em;
-    }
-
-    &__current {
-        color: #000;
     }
 }

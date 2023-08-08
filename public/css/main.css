@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -810,28 +811,32 @@ a {
 .nav-bread ul {
   display: flex;
   align-items: center;
-  gap: 0 0.8rem;
   flex-wrap: wrap;
   white-space: nowrap;
 }
 .nav-bread li {
+  display: flex;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 2.3333333333;
   color: #b4bbc7;
 }
-.nav-bread li:last-child {
-  display: none;
-}
-.nav-bread a {
-  text-decoration: underline;
-}
-.nav-bread__arrow {
+.nav-bread li:after {
+  content: "→";
+  margin: 0 0.5em;
   position: relative;
   top: -0.2em;
 }
-.nav-bread__current {
+.nav-bread li:last-child:after {
+  display: none;
+}
+.nav-bread li:last-child a {
+  text-decoration: none;
   color: #000;
+}
+.nav-bread a {
+  text-decoration: underline;
 }
 
 .nav-down {
