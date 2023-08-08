@@ -1845,15 +1845,6 @@ a {
 .article__text li:last-child {
   margin-bottom: 0;
 }
-.article__text ol li > span {
-  position: absolute;
-  top: 0.5rem;
-  left: 0;
-  color: #b4bbc7;
-  font-size: 1em;
-  font-weight: 500;
-  line-height: 1.2;
-}
 .article__text ul li:before {
   content: "";
   position: absolute;
@@ -1870,6 +1861,15 @@ a {
 }
 .article__tip {
   margin-top: 3rem;
+}
+.article .landing-block-card-number {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  color: #b4bbc7;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 @media (max-width: 599.98px) {

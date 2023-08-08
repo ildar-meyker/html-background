@@ -28,20 +28,6 @@
             @include reset-margins;
         }
 
-        ol {
-            li {
-                > span {
-                    position: absolute;
-                    top: 0.5rem;
-                    left: 0;
-                    color: #b4bbc7;
-                    font-size: 1em;
-                    font-weight: 500;
-                    line-height: calc(24 / 20);
-                }
-            }
-        }
-
         ul {
             li {
                 &:before {
@@ -65,6 +51,16 @@
 
     &__tip {
         margin-top: 3rem;
+    }
+
+    .landing-block-card-number {
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        color: #b4bbc7;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: calc(24 / 20);
     }
 }
 
