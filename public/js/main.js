@@ -186,10 +186,12 @@ var countsState = [];
 
 function handleShift(status) {
   var scrollTop = scrollbar ? status.offset.y : $(".page__window").scrollTop();
-  var isVisible = scrollTop + shiftCalcs.windowHeight > shiftCalcs.offsetTop && shiftCalcs.offsetTop + shiftCalcs.blockHeight > scrollTop;
+  var offsetTop = $shiftTitle.offset().top;
+  var windowHeight = $(window).height();
+  var isVisible = offsetTop + $shiftTitle.outerHeight() > 0 && offsetTop < windowHeight;
 
   if (isVisible) {
-    var shiftValue = (scrollTop + shiftCalcs.windowHeight - shiftCalcs.offsetTop) / shiftCalcs.windowHeight;
+    var shiftValue = (windowHeight - offsetTop) / windowHeight;
     $shiftTitle.css("transform", "translateX(".concat(100 - 100 * shiftValue, "%)"));
   }
 }

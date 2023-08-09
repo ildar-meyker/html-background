@@ -13,14 +13,14 @@ function handleShift(status) {
         ? status.offset.y
         : $(".page__window").scrollTop();
 
+    const offsetTop = $shiftTitle.offset().top;
+    const windowHeight = $(window).height();
+
     const isVisible =
-        scrollTop + shiftCalcs.windowHeight > shiftCalcs.offsetTop &&
-        shiftCalcs.offsetTop + shiftCalcs.blockHeight > scrollTop;
+        offsetTop + $shiftTitle.outerHeight() > 0 && offsetTop < windowHeight;
 
     if (isVisible) {
-        const shiftValue =
-            (scrollTop + shiftCalcs.windowHeight - shiftCalcs.offsetTop) /
-            shiftCalcs.windowHeight;
+        const shiftValue = (windowHeight - offsetTop) / windowHeight;
 
         $shiftTitle.css(`transform`, `translateX(${100 - 100 * shiftValue}%)`);
     }
