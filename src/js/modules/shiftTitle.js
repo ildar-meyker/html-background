@@ -1,8 +1,8 @@
 let calculations = {};
 let $element = $();
 
-function handleScroll() {
-    const scrollTop = $(window).scrollTop();
+function handleScroll(status) {
+    const scrollTop = status.offset.y;
 
     const isVisible =
         scrollTop + calculations.windowHeight > calculations.offsetTop &&
@@ -21,11 +21,13 @@ function recalculate() {
     calculations = {
         offsetTop: $element.offset().top,
         blockHeight: $element.outerHeight(),
-        windowHeight: $(window).height(),
+        windowHeight: $("#window").height(),
     };
 }
 
 $(function () {
+    const scrollbar = Scrollbar.init(document.querySelector("#window"));
+
     $element = $(".offices__title");
 
     if ($element.length === 0) return;
@@ -36,9 +38,9 @@ $(function () {
         (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    $(window).on("scroll", handleScroll);
+                    scrollbar.addListener(handleScroll);
                 } else {
-                    $(window).off("scroll", handleScroll);
+                    scrollbar.removeListener(handleScroll);
                 }
             });
         },

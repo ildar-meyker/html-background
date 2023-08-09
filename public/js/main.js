@@ -27,7 +27,6 @@ $(function () {
 
 //
 $(function () {
-  Scrollbar.init(document.querySelector("#window"));
   $(".scroll-area").each(function () {
     Scrollbar.init(this);
   });
@@ -84,8 +83,8 @@ $(function () {
 var calculations = {};
 var $element = $();
 
-function handleScroll() {
-  var scrollTop = $(window).scrollTop();
+function handleScroll(status) {
+  var scrollTop = status.offset.y;
   var isVisible = scrollTop + calculations.windowHeight > calculations.offsetTop && calculations.offsetTop + calculations.blockHeight > scrollTop;
 
   if (isVisible) {
@@ -98,20 +97,21 @@ function recalculate() {
   calculations = {
     offsetTop: $element.offset().top,
     blockHeight: $element.outerHeight(),
-    windowHeight: $(window).height()
+    windowHeight: $("#window").height()
   };
 }
 
 $(function () {
+  var scrollbar = Scrollbar.init(document.querySelector("#window"));
   $element = $(".offices__title");
   if ($element.length === 0) return;
   recalculate();
   var observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(function (entry) {
       if (entry.isIntersecting) {
-        $(window).on("scroll", handleScroll);
+        scrollbar.addListener(handleScroll);
       } else {
-        $(window).off("scroll", handleScroll);
+        scrollbar.removeListener(handleScroll);
       }
     });
   }, {
