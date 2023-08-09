@@ -24,6 +24,10 @@
     transform: translateY(10rem);
     opacity: 0;
 
+    &.short {
+        transform: translateY(5rem);
+    }
+
     &.active {
         transform: translateY(0);
         opacity: 1;

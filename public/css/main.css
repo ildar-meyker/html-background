@@ -2082,6 +2082,9 @@ a {
   transform: translateY(10rem);
   opacity: 0;
 }
+.fadeInUp.short {
+  transform: translateY(5rem);
+}
 .fadeInUp.active {
   transform: translateY(0);
   opacity: 1;
