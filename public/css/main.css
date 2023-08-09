@@ -1450,7 +1450,7 @@ a {
   padding-bottom: 14rem;
 }
 .intro__title {
-  font-size: clamp(4rem, 5vw, 8rem);
+  font-size: clamp(2.7rem, 5vw, 8rem);
   font-weight: 500;
   line-height: 1.125;
 }
@@ -1483,6 +1483,9 @@ a {
   }
   .intro__desc__text {
     font-size: 1.6rem;
+  }
+  .intro__title {
+    line-height: 1.5;
   }
 }
 .services {
