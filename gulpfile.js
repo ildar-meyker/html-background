@@ -62,6 +62,7 @@ const assets = [
     "./src/video/**/*",
     "./src/data/**/*",
     "./src/robots.txt",
+    "./src/js/modernizr.js",
 ];
 
 function clean(cb) {

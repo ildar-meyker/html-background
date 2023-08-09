@@ -1,6 +1,7 @@
 // shifting
 let shiftCalcs = {};
 let $shiftTitle = $();
+let scrollbar = null;
 
 // counts
 let countsState = [];
@@ -8,7 +9,9 @@ let countsState = [];
 import { CountUp } from "countup.js";
 
 function handleShift(status) {
-    const scrollTop = status.offset.y;
+    const scrollTop = scrollbar
+        ? status.offset.y
+        : $(".page__window").scrollTop();
 
     const isVisible =
         scrollTop + shiftCalcs.windowHeight > shiftCalcs.offsetTop &&
@@ -24,9 +27,13 @@ function handleShift(status) {
 }
 
 function handleHeader(status) {
-    $("#header").toggleClass("header--hidden", status.offset.y > 10);
+    const scrollTop = scrollbar
+        ? status.offset.y
+        : $(".page__window").scrollTop();
 
-    if (status.offset.y < 10) {
+    $("#header").toggleClass("header--hidden", scrollTop > 10);
+
+    if (scrollTop < 10) {
         resetCounts();
     }
 }
@@ -47,11 +54,15 @@ function resetCounts() {
 }
 
 $(function () {
-    const scrollbar = Scrollbar.init(document.querySelector("#page__window"), {
-        damping: 0.03,
-    });
+    if (!Modernizr.touchevents) {
+        scrollbar = Scrollbar.init(document.querySelector("#page__window"), {
+            damping: 0.03,
+        });
 
-    scrollbar.addListener(handleHeader);
+        scrollbar.addListener(handleHeader);
+    } else {
+        $(".page__window").on("scroll", handleHeader);
+    }
 
     $shiftTitle = $(".offices__title");
 
@@ -62,10 +73,18 @@ $(function () {
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    scrollbar.addListener(handleShift);
+                if (!Modernizr.touchevents) {
+                    if (entry.isIntersecting) {
+                        scrollbar.addListener(handleShift);
+                    } else {
+                        scrollbar.removeListener(handleShift);
+                    }
                 } else {
-                    scrollbar.removeListener(handleShift);
+                    if (entry.isIntersecting) {
+                        $(".page__window").on("scroll", handleShift);
+                    } else {
+                        $(".page__window").off("scroll", handleShift);
+                    }
                 }
             });
         },

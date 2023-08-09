@@ -178,13 +178,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var countup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! countup.js */ "./node_modules/countup.js/dist/countUp.min.js");
 // shifting
 var shiftCalcs = {};
-var $shiftTitle = $(); // counts
+var $shiftTitle = $();
+var scrollbar = null; // counts
 
 var countsState = [];
 
 
 function handleShift(status) {
-  var scrollTop = status.offset.y;
+  var scrollTop = scrollbar ? status.offset.y : $(".page__window").scrollTop();
   var isVisible = scrollTop + shiftCalcs.windowHeight > shiftCalcs.offsetTop && shiftCalcs.offsetTop + shiftCalcs.blockHeight > scrollTop;
 
   if (isVisible) {
@@ -194,9 +195,10 @@ function handleShift(status) {
 }
 
 function handleHeader(status) {
-  $("#header").toggleClass("header--hidden", status.offset.y > 10);
+  var scrollTop = scrollbar ? status.offset.y : $(".page__window").scrollTop();
+  $("#header").toggleClass("header--hidden", scrollTop > 10);
 
-  if (status.offset.y < 10) {
+  if (scrollTop < 10) {
     resetCounts();
   }
 }
@@ -217,19 +219,32 @@ function resetCounts() {
 }
 
 $(function () {
-  var scrollbar = Scrollbar.init(document.querySelector("#page__window"), {
-    damping: 0.03
-  });
-  scrollbar.addListener(handleHeader);
+  if (!Modernizr.touchevents) {
+    scrollbar = Scrollbar.init(document.querySelector("#page__window"), {
+      damping: 0.03
+    });
+    scrollbar.addListener(handleHeader);
+  } else {
+    $(".page__window").on("scroll", handleHeader);
+  }
+
   $shiftTitle = $(".offices__title");
   if ($shiftTitle.length === 0) return;
   updateCalcs();
   var observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        scrollbar.addListener(handleShift);
+      if (!Modernizr.touchevents) {
+        if (entry.isIntersecting) {
+          scrollbar.addListener(handleShift);
+        } else {
+          scrollbar.removeListener(handleShift);
+        }
       } else {
-        scrollbar.removeListener(handleShift);
+        if (entry.isIntersecting) {
+          $(".page__window").on("scroll", handleShift);
+        } else {
+          $(".page__window").off("scroll", handleShift);
+        }
       }
     });
   }, {

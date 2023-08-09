@@ -6,10 +6,12 @@ const mode = process.env.NODE_ENV;
 
 const entry = {
     main: "./src/js/main.js",
+    modernizr: "./src/js/modernizr.js",
 };
 
 if (mode === "production") {
     entry["main.min"] = "./src/js/main.js";
+    entry["modernizr.min"] = "./src/js/modernizr.js";
 }
 
 module.exports = {
