@@ -146,6 +146,12 @@
     .nav-down {
         transform: none;
 
+        &__body {
+            > * {
+                transition: none;
+            }
+        }
+
         &__addon {
             &__top {
                 display: block;

@@ -973,6 +973,9 @@ a {
   .nav-down {
     transform: none;
   }
+  .nav-down__body > * {
+    transition: none;
+  }
   .nav-down__addon__top {
     display: block;
   }
