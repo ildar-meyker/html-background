@@ -27,8 +27,9 @@ $(function () {
 
 //
 $(function () {
+  Scrollbar.init(document.querySelector("#window"));
   $(".scroll-area").each(function () {
-    new SimpleBar(this);
+    Scrollbar.init(this);
   });
 });
 

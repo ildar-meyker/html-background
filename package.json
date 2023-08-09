@@ -58,6 +58,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
+        "smooth-scrollbar": "^8.8.4",
         "swiper": "^7.4.1"
     }
 }

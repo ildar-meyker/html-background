@@ -2,6 +2,7 @@
 @import "./helpers/reset.scss";
 @import "./helpers/mixins.scss";
 @import "./helpers/helpers.scss";
+@import "./vendor/fix-vendors.scss";
 
 :root {
     --side-padding: 4.8rem;
@@ -50,6 +51,12 @@ a {
 }
 
 .scroll-area {
+    overflow: auto;
+}
+
+#window {
+    @include fill;
+    position: fixed;
     overflow: auto;
 }
 
