@@ -4,4 +4,5 @@ import "./modules/masks";
 import "./modules/submenu";
 import "./modules/customScroll";
 import "./modules/burger";
-import "./modules/shiftTitle";
+import "./modules/waypoints";
+import "./modules/intro";

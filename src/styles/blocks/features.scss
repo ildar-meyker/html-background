@@ -16,7 +16,21 @@
         border-top: 1px solid rgba(105, 119, 144, 0.5);
         position: relative;
 
+        &:before {
+            transition: all 1s;
+            content: " ";
+            position: absolute;
+            width: 0;
+            height: 1px;
+            top: -1px;
+            background: #697790;
+        }
+
         &:hover {
+            &:before {
+                width: 100%;
+            }
+
             .features__title {
                 color: #ffcb25;
             }

@@ -54,12 +54,6 @@ a {
     overflow: auto;
 }
 
-#window {
-    @include fill;
-    position: fixed;
-    overflow: auto;
-}
-
 @import "./blocks/articles/index.scss";
 @import "./blocks/buttons/index.scss";
 @import "./blocks/cards/index.scss";
@@ -91,6 +85,7 @@ a {
 @import "./blocks/logos.scss";
 @import "./blocks/features.scss";
 @import "./blocks/gallery.scss";
+@import "./blocks/animation.scss";
 
 @media (max-width: 899.98px) {
     :root {

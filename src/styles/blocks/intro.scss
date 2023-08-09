@@ -6,6 +6,7 @@
     &__video {
         @include fill;
         object-fit: cover;
+        background: #000;
     }
 
     &__layer {

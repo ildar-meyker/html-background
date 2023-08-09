@@ -58,6 +58,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
+        "countup.js": "^2.7.0",
         "smooth-scrollbar": "^8.8.4",
         "swiper": "^7.4.1"
     }

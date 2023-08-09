@@ -1,10 +1,22 @@
 .header {
+    transition: all 1s;
     position: absolute;
     z-index: 100;
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 0;
+    transform: translateY(-100%);
+    opacity: 0;
+
+    &--active {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+
+    &--hidden {
+        transform: translateY(-100%);
+    }
 
     &__logo {
         flex: 0 0 auto;
